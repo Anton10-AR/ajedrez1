@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Pieza.h"
 #include "Peon.h"
+#include "Torre.h"
 using namespace std;
 
 int main()
