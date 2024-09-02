@@ -1,8 +1,18 @@
 #pragma once
-class Torre
-{
+#include <iostream>
+#include "Pieza.h"
+using namespace std;
+
+class Torre : public Pieza {
 public:
 
-	Torre() = default;
+	bool puedoIrA(short f, short c) {
+		return true;
+	}
+
+	void avanzar() {
+
+	}
+
 };
 

@@ -6,15 +6,18 @@ class Pieza {
 private:
 	short fila;
 	short columna;
+	char equipo;
 public:
 	Pieza() {
 		fila = 1;
 		columna = 1;
+		equipo = 'B';
 	}
 
-	Pieza(short f, short c) {
+	Pieza(short f, short c, char eq) {
 		fila = f;
 		columna = c;
+		equipo = eq;
 	}
 
 	//getters y setters
@@ -26,13 +29,28 @@ public:
 		return columna;
 	}
 
+	char getEquipo() {
+		return equipo;
+	}
+
+	short setFila(short ff) {
+		fila = ff;
+	}
+
+	short setColumna(short cc) {
+		columna = cc;
+	}
+
 	void verInfo() {
 		cout << fila << " " << columna << endl;
 	}
 
-	//validacion
-	//bool esCeldaValida(short f, short c) {
-	//	return ()
+	bool esCeldaValida(short f, short c) {
+		f = getFila();
+		c = getColumna();
+
+	}
+
 };
 
 

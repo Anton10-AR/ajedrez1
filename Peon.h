@@ -5,13 +5,14 @@ using namespace std;
 
 class Peon : public Pieza {
 public:
-	short direccion;
+	short direccion = getEquipo() == 'B' ? 2 : 8;
+
+	bool puedoIrA(short f, short c) {
+		return true;
+	}
 
 	void avanzar() {
 
 	}
 
-	bool puedoIrA(short f, short c) {
-		return true;
-	}
 };
